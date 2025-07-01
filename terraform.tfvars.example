@@ -1,0 +1,18 @@
+# Azure VM Configuration Variables
+resource_group_name = "rg-vm-demo"
+location           = "East US"
+vm_name            = "vm-demo"
+admin_username     = "azureuser"
+admin_password     = "YourSecurePassword123!"  # Change this to a secure password
+
+# VM Configuration
+vm_size            = "Standard_B1s"
+os_disk_size_gb    = 30
+
+# Network Configuration
+vnet_address_space = ["10.0.0.0/16"]
+subnet_address_prefixes = ["10.0.1.0/24"]
+
+# Security Configuration
+enable_ssh         = true
+enable_http        = true 
